@@ -1,0 +1,151 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hotel Website | Services</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<!---start-Wrap--->
+			<!---start-header--->
+			<div class="header">
+				<div class="wrap">
+					<div class="header-top">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo2.png" title="logo" /></a>
+						</div>
+						<div class="contact-info">
+							<!---<p class="phone">Call us : <a href="#">+61452097717</a></p>--->
+							<!--- <p class="gpa">Gpa : <a href="#">View map</a></p> --->
+							<!---<p class="code">BROUGHT TO YOU BY:<a href="#">Musa</a></p>--->
+							
+							<p class="code">
+								<form style="margin-right: 65px; font-size:medium; font-weight:bold;" align="right" name="form1" method="get" action="/appid/logout"><p id="user"></p>
+									<input name="submit" type="submit" id="submit" value="Log Out">
+								</form>
+								 
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+								<script>
+								$().ready(() => {
+									$.get("/api/user")
+										.then((resp) => {
+											$("#user").text("Hello " + resp.user.name);
+											$("#logout").show();
+											$("#login").hide();
+										});
+								});
+							</script></p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="header-top-nav">
+					<div class="wrap">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="pet.html">Pets</a></li>
+							<li><a href="vets.html">Vet Doctors</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!---End-header--->
+			<div class="clear"> </div>
+			<!---start-content----->
+			<div class="content">
+				<div class="wrap">
+					<!-----start--services------>
+					<div class="services">
+						<div class="service-content">
+							<h3>PetCare Services</h3>
+							<ul>
+								<li><span>1.</span></li>
+								<li><p><a href="#">Surgical Operations</a> Every Evening We . . . . .</p></li>
+								<div class="clear"> </div>
+							</ul>
+							<ul>
+								<li><span>2.</span></li>
+								<li><p><a href="#">Patient Department</a> You can enjoy Swimming in the pool and relax with a drink. . .. . .  </p></li>
+								<div class="clear"> </div>
+							</ul>
+							<ul>
+								<li><span>3.</span></li>
+								<li><p><a href="#">Laboratory Services</a> You can have . . . </p></li>
+								<div class="clear"> </div>
+							</ul>
+							<ul>
+								<li><span>4.</span></li>
+								<li><p><a href="#">Pet Barber Service</a>Here You . . . .</p></li>
+								<div class="clear"> </div>
+							</ul>
+							<ul>
+								<li><span>5.</span></li>
+								<li><p><a href="#">Pets Grooming and Training</a>Here . . . .</p></li>
+								<div class="clear"> </div>
+							</ul>
+							<ul>
+								<li><span>6.</span></li>
+								<li><p><a href="#">Recommendation for Pet Hotels</a> To chill. . .. . </p></li>
+								<div class="clear"> </div>
+							</ul>
+						</div>
+						<div class="services-sidebar">
+							<h3>WE PROVIDE</h3>
+							 <ul>
+							  	<li><a href="#">other facility</a></li>
+							  	<li><a href="#">other facility</a></li>
+							  	<li><a href="#">other facility</a></li>
+							  	<li><a href="#">other facility</a></li>
+							  	<li><a href="#">other facility</a></li>
+								<li><a href="#">BROUGHT TO YOU BY CODE-PROJECTS</a></li>
+								
+	                            
+							  	<li><a href="#">other facility</a></li>
+					 		 </ul>
+					 		 
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<!-----End--services------>
+				</div>
+				<div class="clear"> </div>
+				<div class="boxs">
+				<div class="wrap">
+				<div class="box">
+					 
+				</div>
+				<div class="box center-box">
+					<ul>
+						<li><a href="#">Leave a Feedback</a></li>
+						<li><a href="#">Reviews and Ratings</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Packages</a></li>
+				</div>
+				<div class="box">
+					
+				</div>
+				<div class="clear"> </div>
+			</div>
+			<!---start-box---->
+		</div>
+		<!---start-copy-Right----->
+		<div class="copy-tight">
+			<p>&copy PetCare, Australia 2021 "THIS PROJECT IS BROUGHT TO YOU BY <a href="#">Musa"</a></p>
+		</div>
+		<!---End-copy-Right----->
+			</div>
+			<!---End-content----->
+		</div>
+		<!---End-Wrap--->
+	</body>
+</html>
+

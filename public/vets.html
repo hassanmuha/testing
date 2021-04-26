@@ -1,0 +1,161 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Hotel Website | Gallery</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<!---start-Wrap--->
+			<!---start-header--->
+			<div class="header">
+				<div class="wrap">
+					<div class="header-top">
+						<div class="logo">
+							<a href="index.html"><img src="images/logo2.png" title="logo" /></a>
+						</div>
+						<div class="contact-info">
+							<!---<p class="phone">Call us : <a href="#">+61452097717</a></p>--->
+							<!--- <p class="gpa">Gpa : <a href="#">View map</a></p> --->
+							<!---<p class="code">BROUGHT TO YOU BY:<a href="#">Musa</a></p>--->
+							
+							<p class="code">
+								<form style="margin-right: 65px; font-size:medium; font-weight:bold;" align="right" name="form1" method="get" action="/appid/logout"><p id="user"></p>
+									<input name="submit" type="submit" id="submit" value="Log Out">
+								</form>
+								 
+								<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+								<script>
+								$().ready(() => {
+									$.get("/api/user")
+										.then((resp) => {
+											$("#user").text("Hello " + resp.user.name);
+											$("#logout").show();
+											$("#login").hide();
+										});
+								});
+							</script></p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="header-top-nav">
+					<div class="wrap">
+						<ul>
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="pet.html">Pets</a></li>
+							<li><a href="vets.html">Vet Doctors</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!---End-header--->
+			<div class="clear"> </div>
+			<!---start-content----->
+			<div class="content">
+				<div class="wrap">
+					<!----start-image-gallery----->
+					<div class="gallerys">
+					<h3>Our Vets</h3>
+					<div class="gallery-grids">
+						<div class="gallery-grid">
+							<a href="images/doctor1.jpg"><img src="images/doctor1.jpg" alt=""></a>
+							<h4>Amanda Jessy | Veterinary</h4>
+							<p>Dr. Amanda Jessy grew up all over the United States, starting in California, and finishing up in 1970 in Shreveport, Louisiana. She obtained her Bachelor of Science degree from Louisiana State University in 1982, and then went on to Louisiana State University School of Veterinary Medicine to get her Veterinary Degree in 1986.</p>
+							<div class="gallery-button"><a href="#">Read More</a></div>
+						</div>
+						<div class="gallery-grid grid2">
+							<a href="images/doctor2.jpg"><img src="images/doctor2.jpg" alt=""></a>
+							<h4>Linda Martin | Veterinary</h4>
+							<p>Dr. Linda Martin grew up in a small Arkansas town and attended Arkansas State University where she received her bachelor’s degree in Animal Science. Following graduation, she was accepted into Ross University School of Veterinary Medicine.</p>
+							<div class="gallery-button"><a href="#">Read More</a></div>
+						</div>
+						<div class="gallery-grid">
+							<a href="images/doctor3.jpg"><img src="images/doctor3.jpg" alt=""></a>
+							<h4>Adrian Stufa | Veterinary</h4>
+							<p>Dr. Adrian Stufa grew up in Baton Rouge, Louisiana and attended Louisiana State University receiving a bachelor’s degree in 2008 in Animal Science. She was accepted into Veterinary School at LSU and received a doctorate in Veterinary Medicine in 2011.</p>
+							<div class="gallery-button"><a href="#">Read More</a></div>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<div class="clear"> </div>
+					<div class="gallery-grids">
+						<div class="gallery-grid">
+							<a href="images/doctor4.jpg"><img src="images/doctor4.jpg" alt=""></a>
+							<h4>Harriett Latkovich | Veterinary</h4>
+							<p> Dr. Harriett Latkovich grew up in the small town of French Settlement, LA. She attended Louisiana State University and received a bachelor’s degree in Animal Science in 2015.</p>
+							<div class="gallery-button"><a href="#">Read More</a></div>
+						</div>
+						<div class="gallery-grid grid2">
+							<a href="images/doctor5.jpg"><img src="images/doctor5.jpg" alt=""></a>
+							<h4>Sarah Cothron | Veterinary</h4>
+							<p>Dr. Sarah Cothron grew up all over the United States, starting in California, and finishing up in 1970 in Shreveport, Louisiana. She obtained her Bachelor of Science degree from Louisiana State University in 1982, and then went on to Louisiana State University School of Veterinary Medicine to get her Veterinary Degree in 1986.</p>
+							<div class="gallery-button"><a href="#">Read More</a></div>
+						</div>
+						<div class="gallery-grid">
+							<a href="images/doctor2.jpg"><img src="images/doctor2.jpg" alt=""></a>
+							<h4>Courtney Beary | Veterinary</h4>
+							<p>Dr. Courtney Beary grew up in Baton Rouge, Louisiana and attended Louisiana State University receiving a bachelor’s degree in 2008 in Animal Science. She was accepted into Veterinary School at LSU and received a doctorate in Veterinary Medicine in 2011.</p>
+							<div class="gallery-button"><a href="#">Read More</a></div>
+						</div>
+					</div>
+					<script type="text/javascript" src="js/jquery.lightbox.js"></script>
+				    <link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen">
+				  	<script type="text/javascript">
+				    $(function() {
+				        $('.gallery-grid a').lightBox();
+				    });
+				    </script>
+				    <div class="clear"> </div>
+				    <div class="projects-bottom-paination">
+						<ul>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+						</ul>
+					</div>
+				</div>
+					<!----start-image-gallery----->
+				</div>
+				<div class="clear"> </div>
+				<div class="boxs">
+				<div class="wrap">
+				<div class="box">
+				
+				</div>
+				<div class="box center-box">
+					<ul>
+						<li><a href="#">Leave a Feedback</a></li>
+						<li><a href="#">Reviews and Ratings</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Packages</a></li>
+					</ul>
+				</div>
+				<div class="box">
+					
+				</div>
+				<div class="clear"> </div>
+			</div>
+			<!---start-box---->
+		</div>
+		<!---start-copy-Right----->
+		<div class="copy-tight">
+			<p>&copy PetCare, Australia 2021 "THIS PROJECT IS BROUGHT TO YOU BY <a href="#">Musa"</a></p>
+		</div>
+		<!---End-copy-Right----->
+			</div>
+			<!---End-content----->
+		</div>
+		<!---End-Wrap--->
+	</body>
+</html>
+
